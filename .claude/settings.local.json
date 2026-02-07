@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(findstr:*)",
+      "Bash(cargo build:*)",
+      "Bash(where:*)",
+      "Bash(cmd.exe /c \"cargo build\")",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\samuli100\\\\OneDrive\\\\Dokumente\\\\Projects\\\\starsystem-sim && cargo build 2>&1\")",
+      "Bash(powershell.exe -Command \"Set-Location ''C:\\\\Users\\\\samuli100\\\\OneDrive\\\\Dokumente\\\\Projects\\\\starsystem-sim''; cargo build 2>&1\")",
+      "Bash(powershell.exe -Command \"if \\(Test-Path ''$env:USERPROFILE\\\\.cargo\\\\bin\\\\cargo.exe''\\) { Write-Output ''Found''; & ''$env:USERPROFILE\\\\.cargo\\\\bin\\\\cargo.exe'' --version } else { Write-Output ''Not found at default location''; Get-ChildItem -Path ''C:\\\\'' -Filter ''cargo.exe'' -Recurse -ErrorAction SilentlyContinue | Select-Object -First 3 FullName }\")",
+      "Bash(powershell.exe -Command \"Set-Location ''C:\\\\Users\\\\samuli100\\\\OneDrive\\\\Dokumente\\\\Projects\\\\starsystem-sim''; & ''C:\\\\Users\\\\samuli100\\\\.cargo\\\\bin\\\\cargo.exe'' build 2>&1\")"
+    ]
+  }
+}
